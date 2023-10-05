@@ -1,0 +1,138 @@
+/* Import Google Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+/* Reset CSS */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: #000;
+    background-color: #ECF2FF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-image {
+	width: 100%;
+	max-height: 600px;
+	object-fit: cover;
+	object-position: center;
+}
+
+
+/* Header Styles */
+
+header {
+    background-color: #a1eca7;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    /* padding: 10px 20px; */
+}
+
+h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+h1 a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+h1 a:hover {
+    color: #E5D1FA;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #2DBF0B;
+}
+
+
+/* Card Styles */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #E3DFFD;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* Content and Aside */
+
+.content {
+    flex: 3;
+	min-width: 300px;
+}
+
+aside {
+    flex: 1;
+    padding-left: 20px;
+}
+
+
+/* Profile Image */
+
+#profile img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+
+/* Footer Styles */
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #a1eca7;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Responsive Styles */
+
+@media screen and (max-width: 1000px) {
+    main {
+        flex-direction: column;
+    }
+    .content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+}
